@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brincadeira de Amor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Oi, meu dendê!</h1>
+  <p>Tenho uma surpresa pra você... Quer ver?</p>
+  <button id="revealBtn">Clique aqui 💖</button>
+
+  <div id="loveMessage">Eu amo você, muito muito! 💕</div>
+
+  <script>
+    const btn = document.getElementById('revealBtn');
+    const loveMsg = document.getElementById('loveMessage');
+
+    btn.addEventListener('click', () => {
+      loveMsg.classList.add('show');
+      btn.disabled = true;
+      btn.textContent = '❤ Te amo! ❤';
+    });
+  </script>
+</body>
+</html>
+
